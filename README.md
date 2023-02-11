@@ -2,7 +2,7 @@
 
 > CLI tool to generate vanity addresses for Nostr
 
-[![cicd][cicd-badge]][cicd] [![release][release-badge]][releases] [![license][license-badge]](LICENSE)
+[![cicd][cicd-badge]][cicd] [![release][release-badge]][releases] [![license][license-badge]](LICENSE) [![awesome-nostr][awesome-nostr-badge]][awesome-nostr]
 
 ## Usage
 
@@ -73,6 +73,17 @@ document.
 
 ### Security
 
+#### Entropy and RNG
+
+Cryptographic programs require very high entropy for RNGs. This program currently
+adpots `thread_rng()` RNG to generate random values that used by the elliptic curve.
+The RNG is from the `rand` crate and is re-exported from the `rust-secp256k1`
+crate. It's cryptographically secure and widely trusted by the community.
+
+You may read more about RNGs for Rust in the [The Rust Rand Book].
+
+#### Interface
+
 This program will neither store nor will steal your secret key, but please
 **DON'T TRUST, VERIFY**. Check out the code and build from source yourself, run
 it offline if you are concerned.
@@ -92,5 +103,8 @@ it offline if you are concerned.
 [release-badge]: https://img.shields.io/github/v/release/chawyehsu/nostr-vanity-address-generator?style=flat-square
 [releases]: https://github.com/chawyehsu/nostr-vanity-address-generator/releases/latest
 [license-badge]: https://img.shields.io/github/license/chawyehsu/nostr-vanity-address-generator?style=flat-square
+[awesome-nostr-badge]: https://awesome.re/mentioned-badge-flat.svg
+[awesome-nostr]: https://github.com/aljazceru/awesome-nostr
 [rustup.rs]: https://rustup.rs
 [NIP-19]: https://github.com/nostr-protocol/nips/blob/master/19.md
+[The Rust Rand Book]: https://rust-random.github.io/book/guide-rngs.html
