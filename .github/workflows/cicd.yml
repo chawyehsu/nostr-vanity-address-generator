@@ -10,12 +10,10 @@ jobs:
   check_cargo_fmt:
     name: Check 'cargo fmt'
     runs-on: ubuntu-latest
-    if: "! contains(toJSON(github.event.commits.*.message), '[ci skip]')"
     steps:
       - uses: dtolnay/rust-toolchain@stable
         with:
           toolchain: stable
-          target: ${{ matrix.target }}
           components: rustfmt
       - uses: actions/checkout@v3
       - run: cargo fmt -- --check
