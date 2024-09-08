@@ -10,6 +10,7 @@
 
 ### Bug Fixes
 
+* **ci:** Update GitHub Action runner images ([9503512](https://github.com/chawyehsu/nostr-vanity-address-generator/commit/9503512566845e9304a78f21c18a7e5f9cb17d31))
 * **ci:** Remove unnecessary conditions ([932e0c1](https://github.com/chawyehsu/nostr-vanity-address-generator/commit/932e0c1bbbead2c1103ae08546baca2820eedb4f))
 
 ## 0.1.0 (2023-02-08)
