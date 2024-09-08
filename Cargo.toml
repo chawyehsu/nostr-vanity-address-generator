@@ -1,6 +1,6 @@
 [package]
 name = "nostrgen"
-version = "0.1.0"
+version = "0.2.0"
 authors = ["Chawye Hsu <su+cratesio@chawyehsu.com>"]
 description = "Nostr Vanity Address Generator"
 homepage = "https://github.com/chawyehsu/nostr-vanity-address-generator"
