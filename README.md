@@ -6,11 +6,17 @@
 
 ## Usage
 
-Download the latest release built by GitHub CI from the [releases] page or
-build from source (see below), then run the binary.
+If you have the Rust toolchain installed, you can install it easily with Cargo:
 
 ```
-$ ./nostrgen --help
+cargo install nostrgen --locked
+```
+
+Or you may download the latest release built by GitHub CI from the [releases] page,
+or clone the source and build from source (see below), then run the binary.
+
+```
+$ nostrgen --help
 Usage: nostrgen [OPTIONS] --prefix <PREFIX>
 
 Options:
@@ -23,14 +29,14 @@ Options:
 ### Example
 
 ```
-$ ./nostrgen -p 7777
+$ nostrgen -p 7777
 [#] Start searching with prefix npub17777 (difficulty est.: 1048576)
 [!] Result:
 secret_key:  3d81e7db2e250685b8246def93cb9d29b7a4c73139b4c0ec37e6df63f9a86e7b (hex)
 secret_key:  nsec18kq70kewy5rgtwpydhhe8jua9xm6f3e38x6vpmphum0k87dgdeashjjxyw
 public_key:  npub17777wunn2aq5megnxlnckcfhz2w4zejrvl4nnnha2lfl9lh9qzaqpr4jt4
 
-$ ./nostrgen -p 000 -s 00 -c 10
+$ nostrgen -p 000 -s 00 -c 10
 [#] Start searching with prefix npub1000 and suffix 00 (difficulty est.: 33554432)
 [+] Total 4331377 keys in 0.5 mins (144379.2 keys/s)
 [!] Result:
