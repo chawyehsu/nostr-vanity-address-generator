@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.2.0](https://github.com/chawyehsu/nostr-vanity-address-generator/compare/v0.2.0...v0.2.0) (2024-09-08)
+
+
+### Bug Fixes
+
+* **ci:** Update GitHub Action runner images ([9503512](https://github.com/chawyehsu/nostr-vanity-address-generator/commit/9503512566845e9304a78f21c18a7e5f9cb17d31))
+
 ## [0.2.0](https://github.com/chawyehsu/nostr-vanity-address-generator/compare/v0.1.0...v0.2.0) (2024-09-08)
 
 
